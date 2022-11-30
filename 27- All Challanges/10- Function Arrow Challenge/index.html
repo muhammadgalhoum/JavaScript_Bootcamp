@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // The Regular Function
+    let names = function (...ourNames) {
+      return `String ${ourNames.map( w => `[${w}]`).join(', ')} => Done !`;
+    }
+    console.log(names("Osama", "Mohamed", "Ali", "Ibrahim"));
+
+    // The Arrow Function
+    names = (...ourNames) => `String ${ourNames.map( w => `[${w}]`).join(', ')} => Done !`;
+    console.log(names("Osama", "Mohamed", "Ali", "Ibrahim"));
+
+    let myNumbers = [20, 50, 10, 60];
+
+    // The Arrow Function
+    let calc = (one, two, ...nums) => one + two + +nums;
+    console.log(calc(10, 20, 50)); // 80
+
+    // The Regular Function
+    calc = function (one, two, ...nums) {
+      return one + two + Number(nums); // one + two + +nums
+    }
+    console.log(calc(10, 20, 50)); // 80
+  </script>
+</body>
+</html>

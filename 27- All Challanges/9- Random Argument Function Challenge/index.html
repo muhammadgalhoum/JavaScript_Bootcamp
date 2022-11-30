@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arrangedArr = [];
+    function checkStatus(a, b, c) {
+      typeof a === "string" ? arrangedArr.push(a) : typeof b === "string" ? arrangedArr.push(b) : arrangedArr.push(c);
+      typeof a === "number" ? arrangedArr.push(a) : typeof b === "number" ? arrangedArr.push(b) : arrangedArr.push(c);
+      typeof a === true ? arrangedArr.push(a) : typeof b === true ? arrangedArr.push(b) : arrangedArr.push(c);
+
+      if (arrangedArr[arrangedArr.length - 1] === true) {
+        console.log(`Hello ${arrangedArr[0]}, Your Age Is ${arrangedArr[1]}, You Are Available For Hire`)
+      } else {
+        console.log(`Hello ${arrangedArr[0]}, Your Age Is ${arrangedArr[1]}, You Are Not Available For Hire`)
+      }
+    }
+
+    // Needed Output
+    checkStatus("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+    checkStatus(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+    checkStatus(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+    checkStatus(false, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire"
+  </script>
+</body>
+</html>

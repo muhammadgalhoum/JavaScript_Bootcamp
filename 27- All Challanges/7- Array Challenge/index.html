@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let zero = 0, counter = 3;
+    let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
+
+    my.pop();
+    my.pop();
+    my.reverse();
+
+    console.log(my); // ['Osama', 'Elham', 'Mazero', 'Ahmed']
+
+    my.splice(counter); // ['Osama', 'Elham', 'Mazero']
+    my.shift(); // ['Elham', 'Mazero']
+
+    console.log(my.slice(zero)); // ['Elham', 'Mazero']
+
+    let f_part = my[zero][zero] + my[zero].split("").slice(zero, counter).sort().pop();
+    //console.log(f_part) // El
+
+    let secondElement = my.pop() // Mazero
+    let s_part = secondElement.substring(secondElement.indexOf("z"));
+    let allWord = f_part + s_part;
+    //console.log(s_part) // zero
+
+    console.log(allWord) // Elzero
+
+    console.log(allWord.charAt(allWord.indexOf("r")) + allWord.charAt(allWord.indexOf("o")).toUpperCase()); // rO
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.onload = function() {
+      let newDiv = document.createElement('div');
+      newDiv.textContent = '10';
+      document.body.appendChild(newDiv);
+
+      let counter = setInterval(() => {
+        let div = document.querySelector('div');
+        div.textContent -= 1;
+        if (div.textContent === '5') {
+          window.open('https://elzero.org', '_blank', 'width=400,height=400,left=100,top=100')
+        } else if (div.textContent === '0') {
+          clearInterval(counter)
+        }
+      },1000)
+    }
+  </script>
+</head>
+<body></body>
+</html>

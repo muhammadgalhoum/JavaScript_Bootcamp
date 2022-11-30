@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn JavaScript</title>
+</head>
+<script>
+  /*
+  This Line of Code will cause an error
+  Uncaught TypeError: Cannot read properties of null
+  because we try to change the color of element before initialize it
+  */
+  document.getElementById("el").style.color = "red";
+</script>
+<script>
+  // This code will work correctly and the color of the element with id="el" will be red
+  window.onload = function () {
+    document.getElementById("el").style.color = "red";
+  };
+</script>
+<body>
+  <h1 id="el">Page Title</h1>
+  <script>
+    // This code will work correctly and the color of the element with id="el" will be red
+    document.getElementById("el").style.color = "red";
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Programming Journy",
+    "body": "How can you start your Journy in Programming",
+    "category": "Programming",
+    "author": "Muhammad"
+  },
+  {
+    "id": 2,
+    "title": "Best Countries for travelling on the weekend",
+    "body": "In this Article we will speak about the best countries for travelling on he weekend",
+    "category": "Travelling",
+    "author": "Galhoum"
+  },
+  {
+    "id": 3,
+    "title": "Learn how to learn",
+    "body": "In this Article we will speak about how to learn any new thing",
+    "category": "Advices",
+    "author": "Mohamed"
+  },
+  {
+    "id": 4,
+    "title": "How to search",
+    "body": "In this Article we will speak about how to search about any information",
+    "category": "Searching",
+    "author": "Osama"
+  },
+  {
+    "id": 5,
+    "title": "How to have a healthy Life",
+    "body": "In this Article we will speak about how to have a healthy life",
+    "category": "Life",
+    "author": "Mohamed"
+  }
+]

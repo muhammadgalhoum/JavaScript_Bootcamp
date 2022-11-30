@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.onload = function (){
+      let startElement = document.createElement('div');
+      let endElement = document.createElement('div');
+
+      document.getElementsByTagName('p')[0].remove();
+
+      startElement.className = "start";
+      startElement.setAttribute('title', 'Start Element');
+      startElement.setAttribute('data-value', 'Start');
+      startElement.textContent = 'Start';
+
+      endElement.className = "end";
+      endElement.setAttribute('title', 'End Element');
+      endElement.setAttribute('data-value', 'End');
+      endElement.textContent = 'End';
+
+      document.body.prepend(startElement);
+      document.body.append(endElement);
+    }
+  </script>
+</head>
+<body>
+  <div class="our-element">Our Element</div>
+  <p>Paragraph</p>
+</body>
+</html>

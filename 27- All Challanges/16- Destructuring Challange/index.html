@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let chosen = 1;
+
+    let myFriends = [
+      { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+      { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
+      { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
+    ];
+
+    // Write Your Code Here
+
+    // If chosen === 1
+
+    if (chosen === 1) {
+      [{title: t, age: a, available: v, skills: [, s]}] = myFriends
+      console.log(t)
+      console.log(a)
+      console.log(`${v ? 'Available' : 'Not Available'}`)
+      console.log(s)
+    } else if (chosen === 2) {
+      [, {title: t, age: a, available: v, skills: [, s]}] = myFriends
+      console.log(t)
+      console.log(a)
+      console.log(`${v ? 'Available' : 'Not Available'}`)
+      console.log(s)
+    } else if (chosen === 3) {
+      [, , {title: t, age: a, available: v, skills: [, s]}] = myFriends
+      console.log(t)
+      console.log(a)
+      console.log(`${v ? 'Available' : 'Not Available'}`)
+      console.log(s)
+    } else {
+      console.log('Wrong value!, Please enter any of theses values 1, 2, 3')
+    }
+  </script>
+</body>
+</html>

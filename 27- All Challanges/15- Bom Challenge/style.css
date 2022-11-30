@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 600px;
+  margin: 20px auto;
+}
+.container > div {
+  border-radius: 6px;
+  background-color: #ececec;
+  padding: 20px;
+  width: 100%;
+}
+.container .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .form input {
+  padding: 15px;
+  border: none;
+  border-radius: inherit;
+}
+.container .form input[type='text'] {
+  flex: 1;
+  margin-right: 10px;
+}
+.container .form input[class='add'] {
+  margin: 0 10px;
+}
+.container .form input[class='add'],
+.container .form input[class='clear'] {
+  padding: 13px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff5722;
+}
+.container .form input[type='text']:focus {
+  outline: none;
+}
+.container .tasks {
+  margin: 20px 0;
+}
+.container .tasks div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: inherit;
+  background-color: #fff;
+}
+.container .tasks div:not(:last-child){
+  margin-bottom: 15px;
+}
+.container .tasks div p {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .tasks div button {
+  cursor: pointer;
+  padding: 3px 6px; 
+  color: white;
+  font-weight: bold;
+  border: inherit;
+  border-radius: inherit;
+  background-color: red;
+}

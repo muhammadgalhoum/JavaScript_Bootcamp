@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let n1 = [10, 30, 10, 20];
+    let n2 = [30, 20, 10];
+
+    console.log(eval(n1.join('+')) * n2.length) // 70 * 3 = 210
+    console.log([...n1, ...n2].length * Math.max(...n1)); // 7 * 30 = 210
+    console.log([...n1, ...n2].length * Math.max(...n2)); // 7 * 30 = 210
+    console.log(+`${n2.indexOf(Math.min(...n1))}${Math.min(...n1)}`); // '210' => +'210' => 210
+    console.log(+`${n2.indexOf(Math.min(...n1))}${Math.min(...n2)}`); // '210' => +'210' => 210
+  </script>
+</body>
+</html>

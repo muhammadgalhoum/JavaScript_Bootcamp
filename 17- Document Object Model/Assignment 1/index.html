@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.onload = function () {
+      let myLinks = document.links;
+      for (let i = 0; i < myLinks.length; i++) {
+        if (myLinks[i].classList.contains('open') && myLinks[i].textContent === 'Elzero') {
+          myLinks[i].setAttribute("target","_blank");
+          myLinks[i].click();
+        }
+      }
+    };
+  </script>
+</head>
+<body>
+  <a class="open" href="https://google.com">Google</a>
+  <a class="open" href="https://elzero.org">Elzero</a>
+  <a class="not" href="https://facebook.com">Facebook</a>
+  <a class="linked" href="https://linkedin.com">Elzero</a>
+</body>
+</html>
